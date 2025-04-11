@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "gRCP-Server": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
