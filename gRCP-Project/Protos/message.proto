@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "GrpcMessageCounter";
+service MessageService {
+ rpc StreamMessages(stream MessageRequest) returns (stream
+MessageResponse);
+}
+message MessageRequest {
+ string content = 1;
+}
+message MessageResponse {
+ string echo = 1;
+ int32 totalReceived = 2;
+}
